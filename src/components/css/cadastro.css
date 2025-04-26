@@ -5,26 +5,30 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
-.login-container {
+.cadastro-container {
     width: 100%;
     max-width: 400px;
     background-color: #ffffff;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.login-container h1 {
+/* Estilização do título */
+.cadastro-container h1 {
     color: #2d89ef;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.login-container input[type="text"],
-.login-container input[type="password"] {
+/* Inputs do formulário */
+.cadastro-container input[type="text"],
+.cadastro-container input[type="email"],
+.cadastro-container input[type="password"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -33,7 +37,8 @@ body {
     font-size: 16px;
 }
 
-.login-container button {
+/* Botão de cadastro */
+.cadastro-container button {
     width: 100%;
     background-color: #2d89ef;
     color: #ffffff;
@@ -45,11 +50,11 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.login-container button:hover {
+.cadastro-container button:hover {
     background-color: #1b5dab;
 }
 
-.novo-usuario, .recuperar-senha {
+.voltar-login {
     text-decoration: none;
     display: inline-block;
     margin-top: 10px;
@@ -59,29 +64,36 @@ body {
     transition: color 0.3s ease;
 }
 
-.novo-usuario:hover, .recuperar-senha:hover {
+.voltar-login:hover {
     color: #1b5dab;
 }
 
-/* Mensagem de erro */
-.erro {
-    color: red;
+/* Mensagem de erro ou sucesso */
+.erro, .sucesso {
     font-size: 0.9em;
     margin-top: 10px;
 }
 
+.erro {
+    color: red;
+}
+
+.sucesso {
+    color: green;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
-    .login-container {
+    .cadastro-container {
         width: 90%;
         padding: 15px;
     }
 
-    .login-container h1 {
+    .cadastro-container h1 {
         font-size: 22px;
     }
 
-    .login-container button {
+    .cadastro-container button {
         font-size: 14px;
     }
 }

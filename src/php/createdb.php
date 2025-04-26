@@ -2,10 +2,14 @@
 require_once 'config.php';
 
 try {
-    $sql = "CREATE TABLE IF NOT EXISTS usuarios (
+    $pdo->exec("DROP TABLE IF EXISTS usuarios");
+    echo "Tabela 'usuarios' removida com sucesso.\n";
+
+    $sql = "CREATE TABLE usuarios (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         nome TEXT NOT NULL,
         email TEXT NOT NULL UNIQUE,
+        usuario TEXT NOT NULL,
         senha TEXT NOT NULL,
         perfil TEXT NOT NULL DEFAULT 'comum',
         criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
