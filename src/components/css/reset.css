@@ -1,16 +1,94 @@
-/* Reset básico */
+/* Remove margens e paddings padrão de todos os elementos */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Inclui borda e padding no tamanho total do elemento */
 }
 
-html, body {
-    height: 100%;
-    font-size: 100%;
+/* Remove estilos padrão de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove sublinhados de links por padrão */
+a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do elemento pai */
+}
+
+/* Ajusta tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Redefine imagens */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Configura o HTML e o body */
+html {
+    font-size: 16px; /* Base da fonte */
+    line-height: 1.6; /* Linha confortável */
+    scroll-behavior: smooth; /* Suaviza o scroll */
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte global */
+    font-size: 1rem; /* Define o texto base */
+    line-height: inherit; /* Herda o espaçamento entre linhas do HTML */
+    background-color: #fff; /* Fundo branco padrão */
+    color: #333; /* Texto preto-acinzentado */
+}
+
+/* Redefine títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    line-height: 1.2; /* Títulos mais compactos */
+}
+
+h1 {
+    font-size: 2.5rem; /* Destacado */
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Ajusta campos de formulário */
+input, button, textarea, select {
+    font: inherit; /* Herda fonte e tamanho da fonte */
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 900px; /* Define uma largura máxima */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo opcional */
+    border-radius: 12px; /* Arredondamento para uniformizar o design */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leve sombra para destaque */
 }

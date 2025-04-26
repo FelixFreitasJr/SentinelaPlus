@@ -1,0 +1,26 @@
+.footer-container {
+  text-align: center;
+  background-color: #f3f4f6;
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container p {
+  font-size: inherit; /* Herda do tamanho global */
+  color: #555;
+  margin: 5px 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #2d89ef;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #1b5dab;
+}

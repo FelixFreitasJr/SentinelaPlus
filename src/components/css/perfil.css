@@ -1,0 +1,45 @@
+.container h1 {
+  font-size: 2rem; /* Tamanho destacado */
+  text-align: center; /* Centraliza o título */
+  color: #2d89ef; /* Azul do tema */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  gap: 15px; /* Espaçamento entre campos */
+}
+
+form label {
+  font-size: 1rem; /* Texto claro e legível */
+  color: #333; /* Contraste suave */
+}
+
+form input {
+  width: 100%; /* Campos ocupam toda a largura disponível */
+  padding: 10px; /* Espaçamento interno */
+  border: 1px solid #ccc; /* Borda leve */
+  border-radius: 6px; /* Arredondamento das bordas */
+  font-size: 1rem; /* Tamanho padrão */
+}
+
+form button {
+  background-color: #2d89ef; /* Azul do tema */
+  color: #fff; /* Texto branco */
+  padding: 12px; /* Botão espaçoso */
+  border: none; /* Remove bordas padrão */
+  border-radius: 8px; /* Arredondamento para harmonia com o design */
+  font-size: 1rem; /* Tamanho proporcional ao texto */
+  cursor: pointer; /* Define cursor de interatividade */
+  transition: background-color 0.3s ease; /* Suaviza mudanças no hover */
+}
+
+form button:hover {
+  background-color: #1b5dab; /* Tom mais escuro no hover */
+}
+
+form input:focus {
+  border-color: #2d89ef; /* Destaque nos campos ao focar */
+  outline: none; /* Remove borda externa padrão */
+}

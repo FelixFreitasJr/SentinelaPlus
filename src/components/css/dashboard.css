@@ -1,63 +1,22 @@
-body {
-    background-color: #eef2f5;
-    margin: 0;
-    padding: 0;
-}
-
 .dashboard-container {
-    width: 100%;
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: inherit; /* Herda o tamanho do HTML */
 }
 
-.dashboard-container h1 {
+.dashboard-container h2 {
+    font-size: inherit; /* Herda o tamanho do HTML */
     color: #2d89ef;
-    font-size: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .dashboard-container p {
-    font-size: 18px;
+    font-size: inherit; /* Herda o tamanho do HTML */
     color: #555555;
-    margin-bottom: 30px;
-}
-
-.dashboard-container a {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #2d89ef;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.dashboard-container a:hover {
-    background-color: #1b5dab;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .dashboard-container {
-        margin: 20px;
-        padding: 20px;
-    }
-
-    .dashboard-container h1 {
-        font-size: 22px;
-    }
-
-    .dashboard-container p {
-        font-size: 16px;
-    }
-
-    .dashboard-container a {
-        font-size: 14px;
-    }
+    margin-top: 10px;
 }

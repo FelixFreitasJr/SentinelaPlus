@@ -1,0 +1,119 @@
+.header-container {
+    background-color: #2d89ef; /* Azul */
+    padding: 20px;
+    border-bottom: 4px solid #1b5dab;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Mantém a sombra */
+    border-radius: 0 0 12px 12px; /* Arredonda apenas os cantos inferiores */
+}
+
+
+.header-container h1 {
+    font-size: 2.5rem; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Dá mais peso ao título */
+    color: #ffffff; /* Mantém o texto branco */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Adiciona um leve destaque com sombra */
+}
+
+
+.header-container hr {
+  border: none;
+  border-top: 1px solid #ffffff;
+  margin: 10px 0;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.saudacao {
+  font-size: inherit; /* Herda do tamanho global */
+  font-weight: bold;
+}
+
+.header-links {
+  display: flex;
+  gap: 10px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header-links a:hover {
+  color: #a0c4ff;
+}
+
+.theme-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.theme-button img {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-button:hover {
+  transform: scale(1.2);
+}
+
+.font-button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.font-button:hover {
+  background-color: #555;
+}
+
+.header-actions {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.action-link {
+  text-decoration: none;
+  background-color: #1b5dab;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  min-width: 120px; /* Define uma largura mínima */
+  font-size: inherit; /* Herda do tamanho global */
+  transition: background-color 0.3s ease;
+}
+
+.action-link:hover {
+  background-color: #104b7b;
+}
+
+.theme-button img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(100%);
+}
+[data-theme="dark"] .theme-button img {
+  filter: invert(100%);
+}
+.theme-button img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Define o ícone como sempre branco */
+}

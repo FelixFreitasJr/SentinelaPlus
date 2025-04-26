@@ -1,0 +1,23 @@
+[data-theme="dark"] {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .header-container {
+  background-color: #1c1c1c;
+  border-bottom: 4px solid #333333;
+}
+
+[data-theme="dark"] .footer-container {
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .action-link {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .action-link:hover {
+  background-color: #444444;
+}
