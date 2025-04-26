@@ -29,7 +29,7 @@ O projeto é de código aberto (open source) e foi idealizado para ser utilizado
 ## 📚 Tecnologias Utilizadas
 - HTML5, CSS3 e JavaScript (Frontend)
 - PHP (Backend)
-- MySQL (Banco de dados)
+- SQLite (Banco de dados)
 - Chart.js (Gráficos dinâmicos)
 - TCPDF ou DomPDF (para geração de PDFs)
 - SheetJS (para geração de Excel)

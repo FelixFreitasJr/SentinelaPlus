@@ -7,6 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Sentinela+ | Login</title>
+    <link rel="stylesheet" href="../../components/css/reset.css">
     <link rel="stylesheet" href="../../components/css/login.css">
 </head>
 <body>

@@ -11,6 +11,7 @@ if (!isset($_SESSION['usuario_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>Sentinela+ | Dashboard</title>
+    <link rel="stylesheet" href="../../components/css/reset.css">
     <link rel="stylesheet" href="../../components/css/dashboard.css">
 </head>
 <body>
